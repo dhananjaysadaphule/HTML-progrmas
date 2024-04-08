@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=[40,20,12,80,63,45];
+        let a1=a.forEach(myfunction);
+        function myfunction(e,i,a)
+        {
+            return a[i]=e*5;    
+        }
+        console.log(a);
+    </script>
+    <script>
+        let b=[45,63,85,96,74,60];
+        function fun(b)
+         {
+            return b>60;    
+        }
+        let b1=b.find(fun);
+        console.log(b1);
+    </script>
+
+    <script>
+        let c=(78,52,63,93,54,68);
+        let c1=Array.isArray(c);
+        console.log(c1);
+    </script>
+
+    <script>
+        let d=["take","give","9784646"];
+        let d1=d.includes("9784646");
+        console.log(d1);
+    </script>
+
+    <script>
+        let f=
+        {
+            0:"Priya",
+            1:"Shah",
+            2:18,
+            3:"Pune",
+            length:4,
+        }
+        let f1=Array.from(f);
+        console.log(f1);
+    </script>
+
+    <script>
+        let m=[78,96,85,63,42];
+        let m1=m.fill("Number",1,2);
+        console.log(m1);
+    </script>
+
+<p id="demo"></p>
+<script>
+    document.getElementById("demo").innerHTML="HELLO WORLD !"
+</script>
+<script>
+    let h=1025;
+    console.log(h)
+    console.log(typeof h)
+    console.log(h.toString());
+
+
+    const resultOne=3+true;
+    console.log(resultOne);
+
+    let g=String(h);
+    console.log(g);
+    console.log(typeof g)
+
+    let resultTwo= 1+undefined;
+    console.log(resultTwo)
+
+    let three="8"-6;
+    console.log(three);
+</script>
+<!--   explicit type casting explicit type casting  -->
+<script>
+   let t=Number("hii");
+   console.log(t);
+
+   let result=Number(' ');
+   console.log(result);
+
+   let newdate=new Date();
+   let resulthree=Number(newdate);
+   console.log(resulthree);
+
+   let ripe=(10).toString();
+   console.log(ripe);
+
+   let read =String(1);
+   console.log(read);
+
+   let casting=String(null);
+   console.log(casting);
+
+   let casting1=String(undefined);
+   console.log(casting1);
+
+   let enter=(NaN).toString();
+   console.log(enter);
+
+   let enter1=String(NaN);
+   console.log(enter1);
+
+   let talk=(true).toString();
+   console.log(talk);
+
+   let talk1=String(false)
+   console.log(talk1)
+
+
+   let date=new Date();
+   let resultfour=String(date);
+   console.log(date);
+
+   let resultsix=Boolean("");
+   console.log(resultsix);
+
+   let resultseven=Boolean("hi");
+   console.log(resultseven);
+
+   
+
+</script>
+</body>
+</html>

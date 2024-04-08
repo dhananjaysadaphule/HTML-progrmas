@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+      function fun(num,arm)
+      {
+        let org=num;
+        let sum=0,rem=0;
+        let result
+        while(num!=0)
+        {
+            rem=num%10;
+            sum=sum+rem*rem*rem;
+            num=parseInt(num/10)
+        }
+        if (sum==org)
+        {
+            return 0;
+        }
+        else 
+        {
+            return 1;
+        }
+      }
+      let store=fun(153);
+      if(store==0)
+      {
+        console.log("armstrong");
+      }
+      else{
+        console.log("Not Armstrong");
+      }
+   
+    </script>
+ </body>
+ </html>
